@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
+}
+.box {
+    border: 1px solid;
+    border-color: rgba(0,0,0,.1);
+    height: 80vh;
+    overflow: auto;   
+}
+
+.text-box {
+    padding: 0;
+    height: 20vh;
+}
+form {
+    height: 100%;
+    padding: 0;
+    display: flex;
+}
+form textarea {
+    padding: 0;
+    width: 80% !important;
+}
+form button {
+    padding: 0;
+    width: 20% !important;
+}
