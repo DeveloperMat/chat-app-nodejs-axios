@@ -4,11 +4,14 @@ import http from 'http';
 import Sockets from './sockets';
 
 const app = express();
+const port = process.env.PORT || 3000;
 const server = http.createServer(app);
 app.use(express.static(__dirname + '/public'));
 
-const httpServer = server.listen(3000);
-console.log('Server on port http://localhost:3000');
+
+
+const httpServer = server.listen(port);
+console.log(`Server on port ${port}`);
 
 const io = new WebSocketServer(httpServer);
 
